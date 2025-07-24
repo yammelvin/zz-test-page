@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  text-size-adjust: none;
+}
+
+div.container {
+  margin: 0px auto;
+  padding: 0px;
+  min-width: 300px;
+  max-width: 1200px;
+  background-color: white;
+}
+
+img.image {
+  display: block;
+}
+
+div.message {
+  font-weight: bold;
+  text-align: center;
+}
+
+img.image {
+  margin: max(0px, calc(40vh - 80px)) auto 20px auto;
+  width: 200px; /* height will be 159.13px */
+}
+
+div.message {
+  font-size: 20px;
+}
+
+@media (min-width: 600px) and (min-height: 480px) {
+  img.image {
+    margin: max(0px, calc(40vh - 160px)) auto 40px auto;
+    width: 400px;
+  }
+
+  div.message {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 720px) {
+  img.image {
+    margin: max(0px, calc(40vh - 240px)) auto 60px auto;
+    width: 600px;
+  }
+
+  div.message {
+    font-size: 60px;
+  }
+}
